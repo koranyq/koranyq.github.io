@@ -1,34 +1,30 @@
-# Koranyq — Consultancy Landing Page
+# Koranyq — GitHub Pages Landing Page
 
-A responsive, static, AI-centric business website for **Koranyq**. No framework, npm, server, API keys, or build step required.
+A responsive, static landing page based on the supplied Koranyq *Ideas to Impact* design reference. No build step or backend is required.
 
 ## Deploy to GitHub Pages
+1. Create a GitHub repository (e.g. `koranyq.github.io` or `koranyq-site`).
+2. Upload **the contents of this folder** to the repository root. Keep `assets/` alongside `index.html`.
+3. In **Settings → Pages**, select **Deploy from a branch**, `main`, `/ (root)`.
+4. Wait for GitHub Pages to publish. A project repository will use `https://YOUR_USERNAME.github.io/REPOSITORY/`; a special username repository uses `https://YOUR_USERNAME.github.io/`.
 
-1. Create a GitHub repository (for example `koranyq-website`).
-2. Upload the contents of this folder to the **root** of the repository, including `index.html`, `styles.css`, `script.js`, `assets/`, and `.nojekyll`.
-3. Open **Settings → Pages** in the repository.
-4. Under **Build and deployment**, select **Deploy from a branch**. Choose `main` and `/ (root)`, then save.
-5. Wait for GitHub to publish the site. Your URL will usually be `https://YOUR_USERNAME.github.io/koranyq-website/`.
-6. For a custom domain, configure the DNS records and custom domain in GitHub Pages settings. Enable **Enforce HTTPS** when available.
+## Key features
+- Sticky, translucent header with scroll shadow.
+- Responsive mobile navigation, accessible toggle, and active section links.
+- Floating back-to-top button that appears after scrolling.
+- Responsive hero, service cards, solutions, process, about and contact sections.
+- SEO meta tags, SVG favicon, Open Graph illustration, JSON-LD data.
+- All image paths are relative, supporting GitHub Pages project paths.
 
-## Customize before launch
+## Customize before publishing
+- Replace `karukurobert@gmail.com` with an official business inbox once available.
+- Replace illustrative portfolio thumbnails with approved screenshots or anonymized case studies if permitted.
+- Add an actual domain and configure DNS/HTTPS after acquiring it.
+- Do not add unverified project counts, testimonials, or case-study results.
+- The contact CTA uses `mailto:` (opens the visitor's email app). For reliable web-submitted forms, integrate a form service or backend with spam protection and data-handling disclosures.
 
-- **Contact:** Replace `karukurobert@gmail.com` throughout `index.html` if you want a dedicated business inbox such as `hello@yourdomain`.
-- **Social links:** Add your actual LinkedIn and GitHub URLs after verifying them. No placeholders or invented profile URLs are included.
-- **Case studies:** Replace experience summaries with permission-cleared client outcomes as you obtain them.
-- **Business claims:** The founder's 6+ years, technologies and prior roles are grounded in the supplied resume. Work-in-progress projects are described as engineering experience, not as shipped client products.
-- **Open Graph preview:** `assets/og-cover.svg` is included; for more reliable social sharing, export it to a 1200×630 PNG and update the `og:image` meta tag to that PNG's public absolute URL after deployment.
-- **Analytics:** Add privacy-conscious analytics only after you decide on your data policy.
+## Included
+`index.html`, `styles.css`, `script.js`, `.nojekyll`, and `assets/` (logo, social preview, globe and project thumbnails).
 
-## Limitations
-
-The primary CTA opens an email draft. This is intentional: a GitHub Pages site cannot securely process a contact form without an external service. Add a vetted third-party form service or scheduling link if you want direct submissions/bookings. Do not put API keys in client-side JavaScript.
-
-## Files
-
-- `index.html`: semantic site markup, SEO metadata and business content.
-- `styles.css`: responsive dark visual system and motion.
-- `script.js`: mobile navigation, scroll reveals, copyright year.
-- `assets/logo.svg`: original scalable geometric K mark.
-- `assets/og-cover.svg`: social preview artwork.
-- `.nojekyll`: disable Jekyll processing.
+## Notes
+The supplied globe and project image crops are derived from the user's reference image and are illustrative, not screenshots verified against real product deployments. Google Fonts needs network access; system fallback fonts are provided.
